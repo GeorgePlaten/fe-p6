@@ -41,14 +41,14 @@ $(function () {
        * Taking care to check the property before the value
        * Test for both conditions and convert them to Booleans
        */
-      if (!(allFeeds[i].url) || !(allFeeds[i].url.length)) {
+      if ( !(allFeeds[i].url) || !(allFeeds[i].url.length) ) {
 
         /** Only change to true here (can't be changed back) */
         aFeedHasABadUrl = true;
       }
 
       /** Same treatment for the `name` keys and values as `url` */
-      if (!(allFeeds[i].name) || !(allFeeds[i].name.length)) {
+      if ( !(allFeeds[i].name) || !(allFeeds[i].name.length) ) {
         aFeedHasABadName = true;
       }
     }
@@ -309,7 +309,7 @@ $(function () {
     };
 
     /** add a new feed */
-    beforeEach(function() {
+    beforeEach(function () {
       addNewFeed(newFeed);
     });
     
